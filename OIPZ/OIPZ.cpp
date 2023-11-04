@@ -57,19 +57,16 @@ double Task5(int x, int n, bool& error) {
 void PrintLoop(int min, int max, int h, int n) {
 	double y = 0;
 	bool stop = false;
-	ofstream o("oipz.txt"); //Файл відкривається
 
 	for (int x = min; x <= max; x += h) {
 		y = Task5(x, n, stop);
 		if (!stop) {
 			cout << "With x = " << x << " y = " << y << endl;
-			o << "(" << x << ";" << y << ")\n"; //Дані записуються до файла
 		}
 		else {
 			return;
 		}
 	}
-	o.close(); //Файл закривається
 }
 
 int main() {
