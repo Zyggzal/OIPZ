@@ -53,6 +53,7 @@ double Task5(int x, int n, bool& error) {
 		}
 	}
 }
+
 //Функція виведення результатів до консолі та внесення даних до файлу
 void PrintLoop(int min, int max, int h, int n) {
 	double y = 0;
